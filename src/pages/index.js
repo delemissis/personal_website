@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
 // import { Link } from 'gatsby';
-import Sidebar from '../components/Sidebar';
-import config from '../../config';
-import Portfolio from '../components/Portfolio';
+import Sidebar from "../components/Sidebar";
+import config from "../../config";
+import Portfolio from "../components/Portfolio";
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -17,7 +17,7 @@ const IndexPage = () => (
         <div className="w-100">
           <h1 className="mb-0">
             {config.firstName}
-            <span className="text-primary">{' ' + config.lastName}</span>
+            <span className="text-primary">{" " + config.lastName}</span>
           </h1>
           <div className="subheading mb-5">
             <a href={`mailto:${config.email}`}>{config.email}</a>
@@ -29,7 +29,7 @@ const IndexPage = () => (
             engineering & machine learning.
           </p>
           <div className="social-icons">
-            {config.socialLinks.map(social => {
+            {config.socialLinks.map((social) => {
               const { icon, url } = social;
               return (
                 <a key={url} href={url} target="_blank">
@@ -54,7 +54,7 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Front End Developer Intern</h3>
               <div className="subheading mb-3">
-                {' '}
+                {" "}
                 <a href="https://www.apifon.com/" target="_blank">
                   Apifon
                 </a>
@@ -66,13 +66,13 @@ const IndexPage = () => (
                 <br />• Developing new user-facing features using Javascript
                 frameworks ( React & Angular 8 ) <br />• Designing a modern,
                 highly responsive web-based user interface <br />• Building
-                reusable components and front-end libraries for future use{' '}
+                reusable components and front-end libraries for future use{" "}
                 <br />• Translating designs and wireframes into high-quality
                 code
                 <br />• Learning and understanding user interactions
                 <br />
                 <br /> <strong>Marketing Department - </strong>contributing to
-                coding, maintaining and expanding Apifon's{' '}
+                coding, maintaining and expanding Apifon's{" "}
                 <a href="https://www.apifon.com/" target="_blank">
                   website
                 </a>
@@ -101,7 +101,7 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Bioinformatics Engineer Intern</h3>
               <div className="subheading mb-3">
-                Centre for Research & Technology Hellas{' '}
+                Centre for Research & Technology Hellas{" "}
                 <a href="https://www.certh.gr/root.en.aspx" target="_blank">
                   (CERTH)
                 </a>
@@ -122,7 +122,11 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Freelance Web Developer</h3>
               <div className="subheading mb-3"></div>
-              <p>Designing and implementing websites for companies</p>
+              <p>
+                Designing and implementing websites for companies in
+                collaboration with{" "}
+                <a href="mailto:dalxds@gmail.com">Dimitris Alexiadis</a>
+              </p>
               <p>
                 <a href="#portfolio">Portfolio</a>
               </p>
@@ -281,49 +285,49 @@ const IndexPage = () => (
           <ul className="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-award color_icon"></i> Responsive Web Design
-              Certification (300 hours) -{' '}
+              Certification (300 hours) -{" "}
               <a href="https://www.freecodecamp.org" target="_blank">
                 Freecodecamp
               </a>
             </li>
             <li>
               <i class="fa-li fa fa-award color_icon"></i> Javascript Algorithms
-              and Data Structure Certification (300 hours) -{' '}
+              and Data Structure Certification (300 hours) -{" "}
               <a href="https://www.freecodecamp.org" target="_blank">
                 Freecodecamp
               </a>
             </li>
             <li>
               <i class="fa-li fa fa-award color_icon"></i> Introduction to
-              Gatsby by Jason Lengstorf -{' '}
+              Gatsby by Jason Lengstorf -{" "}
               <a href="https://frontendmasters.com" target="_blank">
                 Frontend Masters
               </a>
             </li>
             <li>
               <i class="fa-li fa fa-award color_icon"></i> Complete Intro to
-              React, v5 by Brian Holt -{' '}
+              React, v5 by Brian Holt -{" "}
               <a href="https://frontendmasters.com" target="_blank">
                 Frontend Masters
               </a>
             </li>
             <li>
               <i class="fa-li fa fa-award color_icon"></i> Intermediate React,
-              v2 by Brian Holt -{' '}
+              v2 by Brian Holt -{" "}
               <a href="https://frontendmasters.com" target="_blank">
                 Frontend Masters
               </a>
             </li>
             <li>
               <i class="fa-li fa fa-award color_icon"></i> State Management in
-              Pure React, v2 by Steve Kinney -{' '}
+              Pure React, v2 by Steve Kinney -{" "}
               <a href="https://frontendmasters.com" target="_blank">
                 Frontend Masters
               </a>
             </li>
             <li>
               <i class="fa-li fa fa-award color_icon"></i> Firebase with React,
-              v2 by Steve Kinney -{' '}
+              v2 by Steve Kinney -{" "}
               <a href="https://frontendmasters.com" target="_blank">
                 Frontend Masters
               </a>
@@ -342,23 +346,23 @@ const IndexPage = () => (
           <h2 className="mb-5">Memberships</h2>
           <ul className="fa-ul mb-0">
             <li>
-              <i class="fa-li fa fa-address-card color_icon"></i>{' '}
+              <i class="fa-li fa fa-address-card color_icon"></i>{" "}
               <a href="https://aiesec.gr/" target="_blank">
                 AIESEC
-              </a>{' '}
-              - world's largest non-profit youth-run organization{' '}
+              </a>{" "}
+              - world's largest non-profit youth-run organization{" "}
             </li>
             <li>
-              <i class="fa-li fa fa-address-card color_icon"></i>{' '}
+              <i class="fa-li fa fa-address-card color_icon"></i>{" "}
               <a href="https://emb.web.auth.gr/about" target="_blank">
                 IEEE Engineering in Medicine and Biology Society AUTH
-              </a>{' '}
+              </a>{" "}
             </li>
 
             <li>
               <i class="fa-li fa fa-address-card color_icon"></i>Student’s
               Conference of Electrical and Computer Engineering on Smart Houses
-              -{' '}
+              -{" "}
               <a href="https://www.sfhmmy.gr/en/home" target="_blank">
                 ECESCON
               </a>
@@ -369,13 +373,13 @@ const IndexPage = () => (
               <a href="http://wave.afixis.org/" target="_blank">
                 WAVE
               </a>
-              ) - Volunteer{' '}
+              ) - Volunteer{" "}
             </li>
             <li>
-              <i class="fa-li fa fa-address-card color_icon"></i>{' '}
+              <i class="fa-li fa fa-address-card color_icon"></i>{" "}
               <a href="https://www.entrepreneurshipschool.com/" target="_blank">
                 Entrepreneurship School
-              </a>{' '}
+              </a>{" "}
               2018 (Competition)
             </li>
             <li>

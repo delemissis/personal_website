@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
-import Scrollspy from 'react-scrollspy';
-import Scroll from './Scroll';
+import React, { Component } from "react";
+import Scrollspy from "react-scrollspy";
+import Scroll from "./Scroll";
 
-import profile from '../assets/images/profile_img.jpg';
-import config from '../../config';
+import profile from "../assets/images/profile_img.jpg";
+import config from "../../config";
 
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       tabs: [
-        { content: 'About', href: 'about' },
-        { content: 'Experience', href: 'experience' },
-        { content: 'Education', href: 'education' },
-        { content: 'Portfolio', href: 'portfolio' },
-        { content: 'Skills', href: 'skills' },
-        // { content: 'Interests', href: 'interests' },
-        { content: 'Courses & Webinars', href: 'awards' },
-        { content: 'Memberships', href: 'memberships' },
+        { content: "About", href: "about" },
+        { content: "Experience", href: "experience" },
+        { content: "Education", href: "education" },
+        { content: "Portfolio", href: "portfolio" },
+        { content: "Skills", href: "skills" },
+        { content: "Courses & Webinars", href: "awards" },
+        { content: "Memberships", href: "memberships" },
       ],
     };
   }
@@ -54,7 +53,7 @@ export class Sidebar extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Scrollspy
-            items={tabs.map(s => s.href)}
+            items={tabs.map((s) => s.href)}
             currentClassName="active"
             offset={-300}
             className="navbar-nav"
